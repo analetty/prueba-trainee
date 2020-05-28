@@ -1,0 +1,20 @@
+<div class=container>
+    <div class="row w-100">
+        <div class="text-md">
+            Si la palabra es rojo, el color será 
+            <ng-container *ngIf="componentClass === 'rojo'">
+                <div style="color:red">
+                    rojo
+                </div>
+            </ng-container>
+            <ng-container *ngIf="componentClass !== 'rojo'">
+                rojo
+                
+            </ng-container>
+            
+        </div>
+
+
+    </div>
+   
+</div>
