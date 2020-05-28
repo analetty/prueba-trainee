@@ -12,10 +12,11 @@ export class MyComponentComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.componentClass);
+    console.log(this.getColor());
   }
 
   getColor(){
-    if(this.componentClass=== 'rojo'){
+    if(this.componentClass.length === 4){
       return 'red';
     } else {
       return 'black';

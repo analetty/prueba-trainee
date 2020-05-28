@@ -1,14 +1,14 @@
 <div class=container>
     <div class="row w-100">
-        <div class="text-md">
-            Si la palabra es rojo, el color será 
-            <ng-container *ngIf="componentClass === 'rojo'">
+        <div class="text-md"[ngStyle]="{'color': getColor()}">
+            Si la palabra tiene 4 letras el color es
+            <ng-container *ngIf="componentClass.length === 4">
                 <div style="color:red">
                     rojo
                 </div>
             </ng-container>
-            <ng-container *ngIf="componentClass !== 'rojo'">
-                rojo
+            <ng-container *ngIf="componentClass.length !== 4">
+                negro
                 
             </ng-container>
             
